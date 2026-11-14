@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22D8C6"/>
+      <stop offset="0.55" stop-color="#1590C8"/>
+      <stop offset="1" stop-color="#0B4A9A"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.28" cy="0.22" r="0.65">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E0A162"/>
+      <stop offset="0.5" stop-color="#C47F3E"/>
+      <stop offset="1" stop-color="#8E5526"/>
+    </linearGradient>
+    <linearGradient id="band" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E9EEF5"/>
+      <stop offset="0.45" stop-color="#B9C3D1"/>
+      <stop offset="1" stop-color="#7D8898"/>
+    </linearGradient>
+    <linearGradient id="straw" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFE07A"/>
+      <stop offset="0.6" stop-color="#F7BE45"/>
+      <stop offset="1" stop-color="#E39A27"/>
+    </linearGradient>
+    <g id="cube">
+      <polygon points="0,-24 26,-10 0,4 -26,-10" fill="#E8FFFF"/>
+      <polygon points="-26,-10 0,4 0,32 -26,18" fill="#8FE7F3"/>
+      <polygon points="26,-10 0,4 0,32 26,18" fill="#4CC3E3"/>
+    </g>
+    <path id="spark" d="M0,-18 C3,-4 4,-3 18,0 C4,3 3,4 0,18 C-3,4 -4,3 -18,0 C-4,-3 -3,-4 0,-18 Z" fill="#FFFFFF"/>
+  </defs>
+
+  <!-- body -->
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#bg)"/>
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#glow)"/>
+
+  <!-- swept-away files -->
+  <g opacity="0.95">
+    <use xlink:href="#cube" transform="translate(372 742) scale(1.05)"/>
+    <use xlink:href="#cube" transform="translate(296 700) scale(0.85)"/>
+    <use xlink:href="#cube" transform="translate(262 786) scale(0.95)"/>
+    <use xlink:href="#cube" transform="translate(198 728) scale(0.62)" opacity="0.85"/>
+    <use xlink:href="#cube" transform="translate(186 818) scale(0.55)" opacity="0.7"/>
+    <use xlink:href="#cube" transform="translate(340 826) scale(0.6)" opacity="0.85"/>
+  </g>
+  <g fill="#DFFBFF">
+    <circle cx="236" cy="660" r="7" opacity="0.8"/>
+    <circle cx="160" cy="776" r="6" opacity="0.6"/>
+    <circle cx="420" cy="812" r="8" opacity="0.7"/>
+    <circle cx="230" cy="860" r="5" opacity="0.5"/>
+    <circle cx="356" cy="668" r="5" opacity="0.7"/>
+    <circle cx="150" cy="700" r="4" opacity="0.5"/>
+  </g>
+  <use xlink:href="#spark" transform="translate(246 618) scale(1.3)"/>
+  <use xlink:href="#spark" transform="translate(452 868) scale(0.8)" opacity="0.85"/>
+
+  <!-- broom shadow on the floor -->
+  <ellipse cx="468" cy="806" rx="150" ry="26" fill="#08306B" opacity="0.28"/>
+
+  <!-- broom -->
+  <g transform="translate(70 -30) rotate(32 512 520)">
+    <rect x="490" y="150" width="44" height="400" rx="22" fill="url(#wood)"/>
+    <rect x="498" y="164" width="10" height="360" rx="5" fill="#FFFFFF" opacity="0.22"/>
+    <path d="M444 566 L580 566 C 640 650 690 730 704 796
+             C 650 818 580 828 512 828 C 444 828 374 818 320 796
+             C 334 730 384 650 444 566 Z" fill="url(#straw)"/>
+    <g stroke="#C9801D" stroke-width="7" stroke-linecap="round" opacity="0.55" fill="none">
+      <path d="M470 590 C 450 680 420 750 380 812"/>
+      <path d="M496 590 C 488 680 476 760 462 824"/>
+      <path d="M528 590 C 536 680 548 760 562 824"/>
+      <path d="M554 590 C 574 680 604 750 644 812"/>
+    </g>
+    <path d="M444 566 L580 566 C 600 594 616 618 630 642 C 560 652 464 652 394 642 C 408 618 424 594 444 566 Z"
+          fill="#FFFFFF" opacity="0.18"/>
+    <rect x="432" y="526" width="160" height="56" rx="18" fill="url(#band)"/>
+    <rect x="432" y="526" width="160" height="14" rx="7" fill="#FFFFFF" opacity="0.45"/>
+    <rect x="440" y="560" width="144" height="10" rx="5" fill="#5E6B7C" opacity="0.35"/>
+  </g>
+</svg>
